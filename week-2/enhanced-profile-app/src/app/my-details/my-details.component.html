@@ -1,0 +1,19 @@
+<!-- // WEB 425 Angular with TypeScript
+// Contributors:
+// Richard Krasso
+// Thomas James Schultz -->
+
+<!--Unordered list with name, favorite food, and favorite color-->
+
+<ul class="list-group">
+    <li class="list-group-item">Name: {{ myProfile.fullName }}</li>
+    <li class="list-group-item">Favorite Food: {{ myProfile.favoriteFood }}</li>
+    <li class="list-group-item">Favorite Color: {{ myProfile.favoriteColor }}</li>
+    <li class="list-group-item">
+        Keywords:
+        <!-- loop over keywords -->
+        <span *ngFor="let word of myProfile.keywords">
+            {{ word }}
+        </span>
+    </li>
+</ul>
